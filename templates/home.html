@@ -7,8 +7,8 @@
         <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
       </head>
       <div class="hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0" id="navbar-collapse">
-        <a href="#" class="p-2 lg:px-4 md:mx-2 text-white-600 rounded hover:bg-gray-200 hover:text-white-700 transition-colors duration-300">Home</a>
-        <a href="#" class="p-2 lg:px-4 md:mx-2 text-white-600 rounded hover:bg-gray-200 hover:text-white-700 transition-colors duration-300">mail letter</a>
+        <a href="mail" class="p-2 lg:px-4 md:mx-2 text-white-600 rounded hover:bg-gray-200 hover:text-white-700 transition-colors duration-300">mail letter</a>
+        <a href="stats" class="p-2 lg:px-4 md:mx-2 text-white-600 rounded hover:bg-gray-200 hover:text-white-700 transition-colors duration-300">stats</a>
       </div>
     </div>
   </nav>
@@ -20,7 +20,7 @@
         <br><br><br><br><br><br><br>
         <span class="shadow-2xl rounded-md p-10 inline-block align-baseline italic text-black-600 text-3xl font-bold max-w-6xl mx-auto">{{quotez}}</span>
         <br><br><br>
-        <span class="inline-block align-baseline italic text-black-600 text-1xl font-bold">{{book}} by {{author}}</span>
+        <a href={{link}}><span class="inline-block align-baseline italic text-black-600 text-1xl font-bold">{{book}} by {{author}}</span></a>
     </body>
     <footer class="fixed bottom-0">
             <div class="container px-6 pt-6">
