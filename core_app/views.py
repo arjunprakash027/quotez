@@ -53,7 +53,7 @@ def mail(request):
 def get_database():
  
    # Provide the mongodb atlas url to connect python to mongodb using pymongo
-   CONNECTION_STRING = "mongodb+srv://arjun:arjun1234@cluster0.seqkzq7.mongodb.net/?retryWrites=true&w=majority"
+   CONNECTION_STRING = "mongodb+srv://arjun:password@cluster0.seqkzq7.mongodb.net/?retryWrites=true&w=majority"
  
    # Create a connection using MongoClient. You can import MongoClient or use pymongo.MongoClient
    client = MongoClient(CONNECTION_STRING)
