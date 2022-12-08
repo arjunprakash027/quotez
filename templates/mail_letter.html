@@ -17,5 +17,27 @@
     <h1 class="text-black-600 text-4xl font-bold">
         MAIL LETTER </h1>
         <br><br><br>
-        <span class="shadow-2xl rounded-md p-10 inline-block align-baseline italic text-black-600 text-3xl font-bold max-w-6xl mx-auto">comming soon &#128521;</span>
+        <span class="shadow-2xl rounded-md p-10 inline-block align-baseline font-bold max-w-6xl mx-auto">
+          <div class="mx-auto" style="width: 500px" ;>
+            <form action="" method="post" class="shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                {% csrf_token%}
+    
+                <div class="form-group">
+                    <label for="username">your mail id:</label>
+                    <input type="text" class="form-control" name="mailid" id="mailid" placeholder="Enter your mail id">
+                </div>
+                <br>
+                <br>
+                <button class = "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" class="btn btn-primary">submit</button>
+                <br />
+                <br>
+                <div class="form-group ">
+                    {% if mailid %}
+                    <div class="alert alert-danger" role="alert">
+                        Thank you, {{mailid}} has been succussfully added to our mailing list.
+                    </div>
+                    {% endif %}
+                </div>
+            </form>
+        </span>
         

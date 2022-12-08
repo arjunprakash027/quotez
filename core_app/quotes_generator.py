@@ -1,4 +1,5 @@
 import json
+from mongo_connect import get_database
 
 dictionary = {
     'books':{
@@ -15,5 +16,6 @@ dictionary = {
 json_object = json.dumps(dictionary, indent=4)
  
 # Writing to sample.json
-with open("quotez/core_app/sample.json", "w") as outfile:
+with open("core_app/sample2.json", "w") as outfile:
     outfile.write(json_object)
+print(get_database())
